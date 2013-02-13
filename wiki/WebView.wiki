@@ -1,0 +1,15 @@
+#summary WebKit WebView
+
+= Information =
+
+WebView is the core view class in the WebKit framework that manages interactions between the WebFrame and WebFrameView classes. To embed web content in your application, you just create a WebView object, attach it to a window, and send a loadRequest: message to its main frame.
+
+Behind the scenes, WebFrame objects encapsulate the content contained in a single frame element. A hierarchy of WebFrame objects is used to model an entire webpage where the root is called the main frame. There is a WebFrameView object per WebFrame object used to display the frame content. Therefore, there is a parallel hierarchy of WebFrameView objects used to render an entire page. The WebView object is also the parent view of this hierarchy. You do not need to create WebFrame and WebFrameView objects directly. These objects are automatically created when the page loads, either programmatically or by the user clicking a link.
+
+You customize your embedded web content by implementing WebView delegates to handle certain aspects of the process. WebView objects have multiple delegates because the process of loading a webpage is asynchronous and complicated if errors occur. All the WebView delegates use informal protocols so you only need to implement only the delegates and methods that define the behavior you wish to change—default implementations are already provided.
+
+For example, you might want to implement the frame load and resource load delegates to monitor the load progress and display status messages. Applications that use multiple windows may want to implement a user interface delegate. See the individual informal delegate protocols for more details: WebFrameLoadDelegate Protocol Reference, WebPolicyDelegate Protocol Reference, WebResourceLoadDelegate Protocol Reference, and WebUIDelegate Protocol Reference.
+
+Another way to monitor load progress with less control is to observe the WebViewProgressEstimateChangedNotification, WebViewProgressFinishedNotification, and WebViewProgressStartedNotification notifications. For example, you could observe these notifications to implement a simple progress indicator in your application. You update the progress indicator by invoking the estimatedProgress method to get an estimate of the amount of content that is currently loaded.
+
+A WebView object is intended to support most features you would expect in a web browser except that it doesn’t implement the specific user interface for those features. You are responsible for implementing the user interface objects such as status bars, toolbars, buttons, and text fields. For example, a WebView object manages a back-forward list by default, and has goBack: and goForward: action methods. It is your responsibility to create the buttons that would send theses action messages. Note, there is some overhead in maintaining a back-forward list and page cache, so you should disable it if your application doesn’t use it.

@@ -1,0 +1,10 @@
+#summary void GetSourceCode()
+
+= Introduction =
+
+Opens the View Source form and displays the source of the current document.
+
+
+= Details =
+
+In the View Source form the source is displayed with syntax highlighting thanks to the FastColoredTextBox from CodeProject.

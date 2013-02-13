@@ -1,0 +1,11 @@
+#summary A class for Resource Monitoring
+#labels Phase-Implementation
+
+= Introduction =
+
+This class will provide the user with Events and Properties related to the resources that a page attempts to load.
+
+
+= Details =
+
+This class is based on WebFrameLoadDelegate and aims to provide information about the resources that are loaded by the page that a WebView tries to navigate to.

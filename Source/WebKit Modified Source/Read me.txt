@@ -1,0 +1,6 @@
+Due to Apple's license I am obliged to provide the edited WebKit files. I edited Interfaces.vcproj in order to expose more types from WebKit and use them in OpenWebKitSharp.
+
+How to incorporate the changes in my WebKit build:
+
+1. Copy all the folders from this directory to <webkitsource>\Source\win
+2. When building WebKit the WebKit.tlb will not be copied to the build folder but in <webkitsource>\Source\win\WebKit.vcproj\<configuration>

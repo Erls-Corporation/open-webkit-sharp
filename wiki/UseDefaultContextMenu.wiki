@@ -1,0 +1,10 @@
+#summary bool UseDefaultContextMenu
+
+= Introduction =
+
+A boolean value that defines whether the default context menu should be displayed.
+
+
+= Details =
+
+If UseDefaultContextMenu is set to false the default context menu will not be displayed and you are able to have your own custom menu implementation via the CustomContextMenuManager object.

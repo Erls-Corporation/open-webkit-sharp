@@ -1,0 +1,10 @@
+#summary WindowClosed event
+
+= Introduction =
+
+The event that is fired when the web page requests that the current browser window is closed
+
+
+= Details =
+
+Some pages request that the current browser window is closed. When that happens, this event is fired and it is recommended that you dispose the current browser and close the tab or the window that it currently is on.

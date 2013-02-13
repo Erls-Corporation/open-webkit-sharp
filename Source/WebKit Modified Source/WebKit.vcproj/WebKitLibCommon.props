@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.40825.2</_ProjectFileVersion>
+    <OutDir>$(ConfigurationBuildDir)\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ConfigurationBuildDir)\include\WebKit;$(ConfigurationBuildDir)\Include;$(ConfigurationBuildDir)\Include\private;$(WebKitLibrariesDir)\Include;$(WebKitLibrariesDir)\Include\private;$(ConfigurationBuildDir)\Include\WebCore;$(WebKitLibrariesDir)\Include\WebCore;$(ConfigurationBuildDir)\Include\WebCore\ForwardingHeaders;$(WebKitLibrariesDir)\Include\WebCore\ForwardingHeaders;$(ConfigurationBuildDir)\Include\JavaScriptCore;$(ConfigurationBuildDir)\Include\private\JavaScriptCore;$(WebKitLibrariesDir)\Include\JavaScriptCore;$(WebKitLibrariesDir)\Include\private\JavaScriptCore;$(WebKitLibrariesDir)\include\pthreads;$(ProjectDir)\..;$(ProjectDir);$(ProjectDir)\..\WebCoreSupport;$(IntDir)include;$(ConfigurationBuildDir)\obj\WebKit\DerivedSources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_USRDLL;WEBKIT_EXPORTS;FRAMEWORK_NAME=WebKit;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>WebKitPrefix.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).vc80.pdb</ProgramDataBaseFileName>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedIncludeFiles>WebKitPrefix.h;ICUVersion.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

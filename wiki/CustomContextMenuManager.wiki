@@ -1,0 +1,7 @@
+#summary WebKitBrowser.CustomContextMenuManager
+
+= Information =
+
+The object that gives you the ability to implement your own context menu to the WebKitBrowser object.
+
+*ShowContextMenu event:* The event that is fired when the user right-clicks inside the WebView and the context menu is shown. Handle your custom menu implementation here.

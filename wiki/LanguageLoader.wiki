@@ -1,0 +1,9 @@
+#summary LanguageLoader event.
+
+= Introduction =
+LanguageLoader is the event in OpenWebKitSharp that can change the status text into other various language.
+
+
+= Details =
+
+This event is still importing language but now it can usable at OpenWebKitSharp.

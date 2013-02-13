@@ -1,0 +1,14 @@
+#summary DownloadBegin event
+
+= Introduction =
+
+The event that is fired when a download starts. The event is fired only if you set GlobalPreferences.WillHandleDownloadsManually = true. Otherwise the event is not fired and the default downloader will show up.
+
+
+= Details =
+
+Arguments:
+Download Link: The link of the file to be downloaded
+Suggested Filename: The filename of the download
+Download: The download object as WebKit.Interop.WebDownload
+

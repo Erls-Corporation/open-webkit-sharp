@@ -1,0 +1,10 @@
+#summary function ElemetAtPoint
+
+= Introduction =
+
+A function that returns the node that exists in the specified point of the document.
+
+
+= Arguments =
+
+*System.Drawing.Point point:* the point in the document that you want to get the element for.

@@ -1,0 +1,1 @@
+All the binaries, both for .NET 4 and .NET 2, are build under Release configuration so as to be safely redistributed.

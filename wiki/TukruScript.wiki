@@ -1,0 +1,42 @@
+#summary TukruScript
+
+= Introduction =
+
+http://sourceforge.net/nf/redirect/?path=http://skxawng.lu/rel/182/tukru.png
+
+TukruScript is a plugin programming language created and developed by IntelloTech Ltd. (http://intellotech.x10.mx/)
+
+
+= Details =
+
+TukruScript is a new, innovative plugin language and framework for browser applications.
+It has high focus on event handling, requests and inner HTML operations.
+
+= Features =
+
+*Full control*
+
+You have full control over all events, methods and requests! Add and remove plugins dynamically!
+
+*Small space usage*
+
+A regular TukruScript plugin needs only about 5-20 KB, while a .NET library reqires about 100-2000 KB.
+
+*Full compactibility*
+
+The TukruScript libary requires .NET Framework 2.0, that means: The half of the world is already supporting the TukruScript wrapper,
+and the other half can easily install it in a few minutes!
+How does it work?
+
+The browser has a plugin management system which can enable & disable plugins. Fortanely, the TukruScript wrapper has a feature to detect & add them to the global plugin collection (plugins are called Agents in TukruScript), because their files always end with the .tsp extension.
+Then, all the user has to do is to fire a function in the event which will notify the plugins that, i.e., the document has finished loading.
+The plugins sometimes send requests, i.e. source code requests. You run a function that will answer this request.
+Sometimes, you must give the browser control as an object.
+Otherwise, how would you know which browser's page was modified? Then, the plugin written in TukruScript modifies it, and fires an event. Its args will have the new source code & the browser you gave. So you just detect which browser it is, and change the source to the new string! It's that easy
+
+= Get it!= 
+
+To get TukruScript, go to https://sourceforge.net/projects/tukruscript/files/. You must give intelloTech a credit if you plan to embed TukruScript.
+Embedding TukruScript into your application
+
+An example project is included with the source. Use it to embed TukruScript into your application.

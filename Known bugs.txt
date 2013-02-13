@@ -1,0 +1,24 @@
+reported by Dodgeball:
+
+    drag and drop disabled (which is enabled in previous version)
+
+    Browser load old favicon, I mean favicon of youtube has Been changed but it still shows the old - Fixed!
+
+    html5 score = 293 + 9 bonus , mine 299 +9 bonus neutral (webkit bug) - now 298 for r105
+
+    crash after downloading file from yahoo mail - Probably WebKit bug
+
+    download file from yahoo mail with name file "securedownload" instead of "namefile"- Probably WebKit bug
+
+    print preview doesnt work
+
+    loadimage and some of the properties that is boolean doesnt work, i mean for loadimage=false it still shows the image, please check another OWS properties - Invalid (preferences moved to GlobalPreferences)
+
+    It can't read .pdf directly, I mean its readable from browser directly (I forgot what version ows is)
+
+
+reported by George Tsoumalis:
+
+    Printing is not functional
+
+    Many WebKit methods are not implemented (WebKit bug)

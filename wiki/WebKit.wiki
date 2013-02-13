@@ -1,0 +1,10 @@
+#summary Introduce WebKit
+
+= Introduction =
+
+WebKit is a layout engine that is developved by Apple, KDE and Nokia. Unlike Gecko, this engine is using a V8 engine, which allows fast content rendering and unreahable JavaScript and media performance. V8 Engine was developed by Google.
+
+
+= Details =
+
+The engine was used in Google Chrome, Apple Safari, GTLite Navigator, Canure and other advanced and fast web browser, while also in other application types.

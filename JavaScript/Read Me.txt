@@ -1,0 +1,3 @@
+Credits for this project go to Peter Nelson. The project is modified to adopt to OpenWebKitSharp's needs.
+
+Microsoft Visual C++ 2010 Express Edition is required for the project to build

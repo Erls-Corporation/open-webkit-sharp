@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_All|Win32">
+      <Configuration>Debug_All</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Cairo_CFLite|Win32">
+      <Configuration>Debug_Cairo_CFLite</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Production|Win32">
+      <Configuration>Production</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Cairo_CFLite|Win32">
+      <Configuration>Release_Cairo_CFLite</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCTargetsPath Condition="'$(VCTargetsPath11)' != '' and '$(VSVersion)' == '' and '$(VisualStudioVersion)' == ''">$(VCTargetsPath11)</VCTargetsPath>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WebKitLib</ProjectName>
+    <ProjectGuid>{0662A8A9-82A3-4638-97D8-EC425D8D87C9}</ProjectGuid>
+    <RootNamespace>WebKit</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Production|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibProduction.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibDebugAll.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibReleaseCairoCFLite.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibDebugCairoCFLite.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="WebKitLibDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.40825.2</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MarshallingHelpers.cpp" />
+    <ClCompile Include="..\WebKitClassFactory.cpp" />
+    <ClCompile Include="..\WebKitDLL.cpp" />
+    <ClCompile Include="..\WebKitSystemBits.cpp" />
+    <ClCompile Include="..\WebNodeHighlight.cpp" />
+    <ClCompile Include="..\AccessibleBase.cpp" />
+    <ClCompile Include="..\AccessibleDocument.cpp" />
+    <ClCompile Include="..\AccessibleImage.cpp" />
+    <ClCompile Include="..\CFDictionaryPropertyBag.cpp" />
+    <ClCompile Include="..\DefaultDownloadDelegate.cpp" />
+    <ClCompile Include="..\DefaultPolicyDelegate.cpp" />
+    <ClCompile Include="..\DOMCoreClasses.cpp" />
+    <ClCompile Include="..\DOMCSSClasses.cpp" />
+    <ClCompile Include="..\DOMEventsClasses.cpp" />
+    <ClCompile Include="..\DOMHTMLClasses.cpp" />
+    <ClCompile Include="..\ForEachCoClass.cpp" />
+    <ClCompile Include="..\FullscreenVideoController.cpp" />
+    <ClCompile Include="..\MemoryStream.cpp" />
+    <ClCompile Include="..\WebActionPropertyBag.cpp" />
+    <ClCompile Include="..\WebArchive.cpp" />
+    <ClCompile Include="..\WebBackForwardList.cpp" />
+    <ClCompile Include="..\WebCache.cpp" />
+    <ClCompile Include="..\WebCookieManager.cpp" />
+    <ClCompile Include="..\WebCookieManagerCFNet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebCookieManagerCurl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebCoreStatistics.cpp" />
+    <ClCompile Include="..\WebDatabaseManager.cpp" />
+    <ClCompile Include="..\WebDataSource.cpp" />
+    <ClCompile Include="..\WebDocumentLoader.cpp" />
+    <ClCompile Include="..\WebDownload.cpp" />
+    <ClCompile Include="..\WebDownloadCFNet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebDownloadCurl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebDropSource.cpp" />
+    <ClCompile Include="..\WebElementPropertyBag.cpp" />
+    <ClCompile Include="..\WebError.cpp" />
+    <ClCompile Include="..\WebFrame.cpp" />
+    <ClCompile Include="..\WebFramePolicyListener.cpp" />
+    <ClCompile Include="..\WebGeolocationPolicyListener.cpp" />
+    <ClCompile Include="..\WebGeolocationPosition.cpp" />
+    <ClCompile Include="..\WebHistory.cpp" />
+    <ClCompile Include="..\WebHistoryItem.cpp" />
+    <ClCompile Include="..\WebHTMLRepresentation.cpp" />
+    <ClCompile Include="..\WebIconDatabase.cpp" />
+    <ClCompile Include="..\WebInspector.cpp" />
+    <ClCompile Include="..\WebJavaScriptCollector.cpp" />
+    <ClCompile Include="..\WebKitLogging.cpp" />
+    <ClCompile Include="..\WebKitStatistics.cpp" />
+    <ClCompile Include="..\WebMutableURLRequest.cpp" />
+    <ClCompile Include="..\WebNavigationData.cpp" />
+    <ClCompile Include="..\WebNotification.cpp" />
+    <ClCompile Include="..\WebNotificationCenter.cpp" />
+    <ClCompile Include="..\WebPreferences.cpp" />
+    <ClCompile Include="..\WebResource.cpp" />
+    <ClCompile Include="..\WebScriptObject.cpp" />
+    <ClCompile Include="..\WebScriptWorld.cpp" />
+    <ClCompile Include="..\WebScrollBar.cpp" />
+    <ClCompile Include="..\WebSecurityOrigin.cpp" />
+    <ClCompile Include="..\WebSerializedJSValue.cpp" />
+    <ClCompile Include="..\WebTextRenderer.cpp" />
+    <ClCompile Include="..\WebURLAuthenticationChallenge.cpp" />
+    <ClCompile Include="..\WebURLAuthenticationChallengeSender.cpp" />
+    <ClCompile Include="..\WebURLAuthenticationChallengeSenderCFNet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebURLAuthenticationChallengeSenderCurl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebURLCredential.cpp" />
+    <ClCompile Include="..\WebURLProtectionSpace.cpp" />
+    <ClCompile Include="..\WebURLResponse.cpp" />
+    <ClCompile Include="..\WebUserContentURLPattern.cpp" />
+    <ClCompile Include="..\WebView.cpp" />
+    <ClCompile Include="..\WebWorkersPrivate.cpp" />
+    <ClCompile Include="..\WebKitCOMAPI.cpp" />
+    <ClCompile Include="..\WebKitGraphics.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\WebLocalizableStrings.cpp" />
+    <ClCompile Include="..\WebCoreSupport\EmbeddedWidget.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebChromeClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebContextMenuClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebDesktopNotificationsDelegate.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebDragClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebEditorClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebFrameLoaderClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebFrameNetworkingContext.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebGeolocationClient.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebInspectorClient.cpp" />
+    <ClCompile Include="..\..\cf\WebCoreSupport\WebInspectorClientCF.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebInspectorDelegate.cpp" />
+    <ClCompile Include="..\WebCoreSupport\WebPlatformStrategies.cpp" />
+    <ClCompile Include="..\WebKitPrefix.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug_All|Win32'">WebKitPrefix.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Production|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AccessibleBase.h" />
+    <ClInclude Include="..\AccessibleDocument.h" />
+    <ClInclude Include="..\AccessibleImage.h" />
+    <ClInclude Include="autoversion.h" />
+    <ClInclude Include="..\CFDictionaryPropertyBag.h" />
+    <ClInclude Include="..\CodeAnalysisConfig.h" />
+    <ClInclude Include="..\COMEnumVariant.h" />
+    <ClInclude Include="..\COMPropertyBag.h" />
+    <ClInclude Include="..\COMVariantSetter.h" />
+    <ClInclude Include="..\DefaultDownloadDelegate.h" />
+    <ClInclude Include="..\DefaultPolicyDelegate.h" />
+    <ClInclude Include="..\DOMCoreClasses.h" />
+    <ClInclude Include="..\DOMCSSClasses.h" />
+    <ClInclude Include="..\DOMEventsClasses.h" />
+    <ClInclude Include="..\DOMHTMLClasses.h" />
+    <ClInclude Include="..\ForEachCoClass.h" />
+    <ClInclude Include="..\FullscreenVideoController.h" />
+    <ClInclude Include="..\MarshallingHelpers.h" />
+    <ClInclude Include="..\MemoryStream.h" />
+    <ClInclude Include="..\ProgIDMacros.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\WebActionPropertyBag.h" />
+    <ClInclude Include="..\WebArchive.h" />
+    <ClInclude Include="..\WebBackForwardList.h" />
+    <ClInclude Include="..\WebCache.h" />
+    <ClInclude Include="..\WebCachedFramePlatformData.h" />
+    <ClInclude Include="..\WebCookieManager.h" />
+    <ClInclude Include="..\WebCoreStatistics.h" />
+    <ClInclude Include="..\WebDatabaseManager.h" />
+    <ClInclude Include="..\WebDataSource.h" />
+    <ClInclude Include="..\WebDocumentLoader.h" />
+    <ClInclude Include="..\WebDownload.h" />
+    <ClInclude Include="..\WebDropSource.h" />
+    <ClInclude Include="..\WebElementPropertyBag.h" />
+    <ClInclude Include="..\WebError.h" />
+    <ClInclude Include="..\WebFrame.h" />
+    <ClInclude Include="..\WebFramePolicyListener.h" />
+    <ClInclude Include="..\WebGeolocationPolicyListener.h" />
+    <ClInclude Include="..\WebGeolocationPosition.h" />
+    <ClInclude Include="..\WebHistory.h" />
+    <ClInclude Include="..\WebHistoryItem.h" />
+    <ClInclude Include="..\WebHTMLRepresentation.h" />
+    <ClInclude Include="..\WebIconDatabase.h" />
+    <ClInclude Include="..\WebInspector.h" />
+    <ClInclude Include="..\WebJavaScriptCollector.h" />
+    <ClInclude Include="..\WebKitClassFactory.h" />
+    <ClInclude Include="..\WebKitDLL.h" />
+    <CustomBuild Include="..\WebKitGraphics.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\WebKitLogging.h" />
+    <ClInclude Include="..\WebKitStatistics.h" />
+    <ClInclude Include="..\WebKitStatisticsPrivate.h" />
+    <ClInclude Include="..\WebKitSystemBits.h" />
+    <CustomBuild Include="..\WebLocalizableStrings.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Cairo_CFLite|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClInclude Include="..\WebMutableURLRequest.h" />
+    <ClInclude Include="..\WebNavigationData.h" />
+    <ClInclude Include="..\WebNodeHighlight.h" />
+    <ClInclude Include="..\WebNotification.h" />
+    <ClInclude Include="..\WebNotificationCenter.h" />
+    <ClInclude Include="..\WebPreferenceKeysPrivate.h" />
+    <ClInclude Include="..\WebPreferences.h" />
+    <ClInclude Include="..\WebResource.h" />
+    <ClInclude Include="..\WebScriptObject.h" />
+    <ClInclude Include="..\WebScriptWorld.h" />
+    <ClInclude Include="..\WebScrollBar.h" />
+    <ClInclude Include="..\WebSecurityOrigin.h" />
+    <ClInclude Include="..\WebSerializedJSValue.h" />
+    <ClInclude Include="..\WebTextRenderer.h" />
+    <ClInclude Include="..\WebURLAuthenticationChallenge.h" />
+    <ClInclude Include="..\WebURLAuthenticationChallengeSender.h" />
+    <ClInclude Include="..\WebURLCredential.h" />
+    <ClInclude Include="..\WebURLProtectionSpace.h" />
+    <ClInclude Include="..\WebURLResponse.h" />
+    <ClInclude Include="..\WebUserContentURLPattern.h" />
+    <ClInclude Include="..\WebView.h" />
+    <ClInclude Include="..\WebWorkersPrivate.h" />
+    <ClInclude Include="..\WebCoreSupport\EmbeddedWidget.h" />
+    <ClInclude Include="..\WebCoreSupport\WebChromeClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebContextMenuClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebDesktopNotificationsDelegate.h" />
+    <ClInclude Include="..\WebCoreSupport\WebDragClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebEditorClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebFrameLoaderClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebFrameNetworkingContext.h" />
+    <ClInclude Include="..\WebCoreSupport\WebGeolocationClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebInspectorClient.h" />
+    <ClInclude Include="..\WebCoreSupport\WebInspectorDelegate.h" />
+    <ClInclude Include="..\WebCoreSupport\WebPlatformStrategies.h" />
+    <ClInclude Include="..\WebKitPrefix.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
